@@ -5,12 +5,18 @@ A Maven plugin for generating the XSD files from JPA classes using a Maven plugi
 
 Usage
 =====
-Just include this plugin definition in your pom file :
+* First download the project source from this github repo using either the Download ZIP link at the bottom right or cloning this repository.
+* Next run the following command to install the plugin to your local repo:
+	        mvn clean install
+	        
+You can also deploy the plugin, if you want to your remote repository using the deploy goal of Maven.
+
+* Next, include this plugin definition in your pom file :
 
             <plugin>
                 <groupId>org.easetech.plugin</groupId>
                 <artifactId>datamanager-maven-plugin</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>1.0-SNAPSHOT</version> <!-- look for the latest version -->
                 <executions>
                     <execution>
                         <phase>generate-resources</phase>
