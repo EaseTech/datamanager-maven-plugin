@@ -5,13 +5,11 @@ A Maven plugin for generating the XSD files from JPA classes using a Maven plugi
 
 Usage
 =====
-* First download the project source from this github repo using either the Download ZIP link at the bottom right or cloning this repository.
-* Next run the following command to install the plugin to your local repo:
-	        mvn clean install
+* Download and install locally(mvn clean install) schema-generator project from Easetech Github repo : https://github.com/EaseTech/schema-generator
+* Next download and install locally(mvn clean install) data-manager project from Easetech Github repo : https://github.com/EaseTech/data-manager
+* Next download and install(mvn clean install) the datamanager-maven-plugin source from this github repo using either the Download ZIP link at the bottom right or cloning this repository.
 	        
-You can also deploy the plugin, if you want to your remote repository using the deploy goal of Maven.
-
-* Next, include this plugin definition in your pom file :
+* Finally, include this plugin definition in your pom file :
 
             <plugin>
                 <groupId>org.easetech.plugin</groupId>
@@ -48,3 +46,5 @@ You can remove the executions section all together from the above plugin configu
 where et stands for EaseTech.
 
 NOTE: The XSD outputDir should be already there, otherwise the MOJO will throw an exception.
+
+SideNote: The first two steps listed above in the usage guide are required because schema-generator and data-manager libraries are still not available from Maven Central Repo. Once they are released in Maven, the above steps will no longer be required.
